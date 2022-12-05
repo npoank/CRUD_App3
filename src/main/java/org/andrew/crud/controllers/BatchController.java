@@ -1,4 +1,4 @@
-package org.andrew.crud.config;
+package org.andrew.crud.controllers;
 
 import org.andrew.crud.dao.PersonDAO;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,12 +8,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping("/test-batch-update")
-public class BatcController {
+public class BatchController {
 
     private final PersonDAO personDAO;
 
     @Autowired
-    public BatcController(PersonDAO personDAO) {
+    public BatchController(PersonDAO personDAO) {
         this.personDAO = personDAO;
     }
 
